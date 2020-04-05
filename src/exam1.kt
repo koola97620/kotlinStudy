@@ -38,6 +38,48 @@ class exam1 {
 
     fun maxOfKt(a: Int, b: Int) = if(a>b) a else b
 
+    fun parseInt(str: String): Int? {
+        return str.toIntOrNull()
+    }
+
+    fun getStringLength(obj: Any): Int? {
+        if (obj is String) {
+            return obj.length
+        }
+        return null
+    }
+
+    fun getStringLength2(obj: Any): Int? {
+        if (obj !is String) return null
+        return obj.length
+    }
+
+    fun getStringLength3(obj: Any): Int? {
+        if (obj is String && obj.length > 0) {
+            return obj.length
+        }
+        return null
+    }
+
+    fun loopExam() {
+        val items = listOf("apple","banana","kiwifruit")
+        for (item in items) {
+            println(item)
+        }
+
+        val items2 = listOf("apple","banana","kiwifruit")
+        for (index in items2.indices) {
+            println("item at $index is ${items2[index]}")
+        }
+
+        val items3 = listOf("apple","banana","kiwifruit")
+        var index = 0
+        while (index < items3.size) {
+            println("item at $index is ${items3[index]}")
+            index++
+        }
+    }
+
 
     fun init() {
         val a: Int = 1
