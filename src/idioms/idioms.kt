@@ -1,8 +1,8 @@
-import java.awt.Rectangle
+package idioms
+
 import java.io.File
 import java.nio.file.Files
 import java.nio.file.Paths
-import java.util.*
 import kotlin.ArithmeticException
 import kotlin.IllegalArgumentException
 
